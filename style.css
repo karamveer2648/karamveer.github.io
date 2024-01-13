@@ -100,7 +100,7 @@ text-align: center;
     box-shadow: 0 0 2px red, inset 0 0 2px red;
 
     padding: 10px;
-    margin: 10px 0;
+    margin: -260px -150px;
     border-radius: 8px;
     float: left;
     font-size: small;
@@ -112,8 +112,7 @@ text-align: center;
     left: 50%;
     transform: translateX(900%) translateY(150%);
     border-width: 0 10px 15px 10px;
-    border-style: solid;
-    border-color: transparent transparent #ff6666 transparent;
+   
     
   }
       
@@ -126,8 +125,6 @@ text-align: center;
     z-index: 999;
     top: 70px;
     right: 0; /* Align to the right */
-    border: white 2px solid
-    ;
     width: 50%;
     height: 50%;
 }
