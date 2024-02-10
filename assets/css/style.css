@@ -9,18 +9,45 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
-}
+  background-color: #0f0000;
+  background-image: url(http://api.thumbr.it/whitenoise-200x200.png?background=00000000&noise=626262&density=15&opacity=15);
+  background-size: 100px;
+  text-shadow: 0 0 5px red;
+  color: #ff6666;
 
+}
+.scanline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.03);
+  animation: scanline 6s linear infinite;
+  z-index: -11;
+}
+@keyframes scanline {
+  0.01% {
+      transform: translatey(-100%);
+  }
+  99.99% {
+      transform: translatey(0);
+  }
+  100% {
+      transform: translatey(-100%);
+  }
+} 
 a {
-  color: #0563bb;
+  color: #ff6666;
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: #ff6666;
   text-decoration: none;
 }
 
@@ -31,6 +58,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+  color: #ff6666
 }
 
 /*--------------------------------------------------------------
@@ -52,13 +80,13 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #ff6666;
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #0678e3;
-  color: #fff;
+  color: #ff6666;
 }
 
 .back-to-top.active {
@@ -168,7 +196,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: #ff6666;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -189,7 +217,7 @@ h6 {
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: #45505b;
+  color: #ff6666;
 }
 
 @media (min-width: 992px) {
@@ -202,7 +230,7 @@ h6 {
   .nav-menu a span,
   .nav-menu a:focus span {
     display: none;
-    color: #fff;
+    color: #ff6666;
   }
 }
 
@@ -210,7 +238,7 @@ h6 {
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
-  color: #fff;
+  color: #ff6666;
   background: #0563bb;
 }
 
@@ -218,13 +246,13 @@ h6 {
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu li:hover>a span {
-  color: #fff;
+  color: #ff6666;
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover>a {
   width: 100%;
-  color: #fff;
+  color: #ff6666;
 }
 
 .nav-menu a:hover span,
@@ -252,7 +280,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: #ff6666;
 }
 
 .mobile-nav-active {
@@ -264,7 +292,7 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle {
-  color: #fff;
+  color: #ff6666;
   background-color: #0563bb;
 }
 
@@ -274,7 +302,6 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -287,7 +314,6 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -311,7 +337,7 @@ h6 {
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #ff6666;
   letter-spacing: 1px;
 }
 
@@ -322,14 +348,14 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #ff6666;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #ff6666;
 }
 
 @media (max-width: 992px) {
@@ -369,7 +395,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #ff6666;
 }
 
 .section-title h2::before {
@@ -404,7 +430,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #728394;
+  color: #ff6666;
 }
 
 .about .content ul {
@@ -452,7 +478,7 @@ section {
   transform: translateX(-50%);
   font-size: 24px;
   background: #0563bb;
-  color: #fff;
+  color: #ff6666;
   border-radius: 50px;
   display: inline-flex;
   align-items: center;
@@ -465,7 +491,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #011426;
+  color: #ff6666;
 }
 
 .facts .count-box p {
@@ -748,7 +774,6 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
   opacity: 1;
   border: 1px solid #0563bb;
 }
@@ -995,7 +1020,6 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
   opacity: 1;
   border: 1px solid #0563bb;
 }
